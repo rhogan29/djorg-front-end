@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Routes from './routes';
 import './App.css';
 import Signin from './components/SignIn';
 import MainPage from './components/MainPage';
@@ -7,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <MainPage />
+      <Signin />
       </div>
     );
   }
