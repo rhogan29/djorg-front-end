@@ -1,0 +1,241 @@
+/*
+COLORS: 
+BLUE-GRAY: #455670;
+LIGHT-GRAY-BLUE: #8893A3;
+NAVY BLUE: #1C2E4A;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+}
+
+.sign-in-container {
+    height: 95vh;
+    background-image: linear-gradient(to right, 
+    rgba(69, 86, 112, 0.90), 
+    rgba(28, 46, 74, 0.90)), 
+    url(../images/notes-background.jpg);
+    background-size: cover;
+    background-position: top;
+
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.sign-in-heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.sign-in-heading-primary-main {
+    display: block;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 25px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+.sign-in-heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 17.4px;
+
+    animation-name: moveInRight;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+.input-wrapper {
+    margin: 40px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color:#ffff;
+    opacity: 1; /* Firefox */
+}
+
+.username-input {
+    width: 400px;
+    height: 30px;
+    background-color: #919191;
+    border-radius: 3px;
+    margin-bottom: 20px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+.username-input:hover {
+    cursor: pointer;
+    width: 400px;
+    height: 30px;
+    background-color: #636363;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    box-shadow: 3px 4px #3c3c3c;
+}
+
+.password-input {
+    width: 400px;
+    height: 30px;
+    background-color: #919191;
+    border-radius: 3px;
+    margin-bottom: 20px;
+
+    animation-name: moveInRight;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+.password-input:hover {
+    cursor: pointer;
+    width: 400px;
+    height: 30px;
+    background-color: #636363;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    box-shadow: 3px 4px #3c3c3c;
+}
+
+.key-input {
+    width: 400px;
+    height: 30px;
+    background-color: #919191;
+    border-radius: 3px;
+    margin-bottom: 20px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+.key-input:hover {
+    cursor: pointer;
+    width: 400px;
+    height: 30px;
+    background-color: #636363;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    box-shadow: 3px 4px #3c3c3c;
+}
+
+.sign-in-button {
+    color: #ffff;
+    border: #0000;
+    background-color: rgb(31, 57, 101);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    height: 25px;
+    width: 150px;
+
+    animation-name: moveInRight;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+.sign-in-button:hover {
+    cursor: pointer;
+    color: rgb(31, 57, 101);
+    border: #0000;
+    background-color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    height: 25px;
+    width: 150px;
+}
+
+.register-button {
+    color: #fff;
+    border: #0000;
+    background-color: rgb(31, 57, 101);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    height: 25px;
+    width: 150px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+.register-button:hover {
+    cursor: pointer;
+    color: rgb(31, 57, 101);
+    border: #0000;
+    background-color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    height: 25px;
+    width: 150px;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
