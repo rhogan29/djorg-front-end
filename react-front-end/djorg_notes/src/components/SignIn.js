@@ -25,7 +25,7 @@ class Signin extends Component {
 
                         <div className="input-wrapper">
                             <div className="sign-in-btn-container">
-                                <button className="sign-in-button" name="Sign In">See the notes</button>
+                                <Link to="/notes" className="sign-in-link"><button className="sign-in-button" name="Sign In">See the notes</button></Link>
                             </div>
                         </div>
                     </div>

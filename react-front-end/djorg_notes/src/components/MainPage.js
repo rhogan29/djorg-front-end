@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './MainPage.css';
+import { Link } from 'react-router-dom'
 
 class MainPage extends React.Component {
     constructor(props) {
@@ -47,6 +48,9 @@ class MainPage extends React.Component {
                         <ul className="notes-list-container">
                             {this.state.notes.map(note => <li className="Note-disply"><div className="note-title">{note.title}</div> <div className="note-content">{note.content}</div></li>)}
                         </ul>
+                        <div className="back-home-btn-container">
+                                <Link to="/" className="back-home-link"><button className="back-home-button" name="back-home">Home</button></Link>
+                        </div>
                     </div>
                 </div>
             </div>
